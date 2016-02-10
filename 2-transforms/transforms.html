@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div{
+		border-style: solid;
+		border-top-width: 2px;
+		border-radius: 10px;
+		width: 150px;
+		height: 50px;
+		margin-left: 300px;
+		text-align: center;
+	}
+	#a{
+		/* No transforms for this one */
+	}
+	#b{
+		transform: translate(-100px, 0px);
+	}
+	#c{
+		transform: translate(0px, 100px) rotate(45deg);
+	}
+	#d{
+		transform: scale(2, 2);
+	}
+	#e{
+		transform: translate(0px, 100px) skew(0deg, 10deg);
+	}
+	</style>
+</head>
+<body>
+
+<div id="a">Box</div>
+<div id="b">I'm Traslated</div>
+<div id="c">I'm Rotated & Traslated</div>
+<div id="d">I'm Scaled</div>
+<div id="e">I'm Skewed & Traslated</div>
+
+</body>
+</html>
